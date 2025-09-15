@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sean Bombay — Funny Horses</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif; 
+      background: #f5f5f7; 
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #1f3a60;  
+      color: #fff;
+      padding: 14px 16px;
+      text-align: center;
+    }
+
+
+    .topbar {
+      background: #2a4f80;
+      padding: 8px 12px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 6px 8px;
+      border-radius: 3px;
+    }
+    nav a:hover { background: rgba(255,255,255,.18); }
+
+
+    form.search {
+      margin-left: auto;
+      display: flex;
+      gap: 6px;
+    }
+    form.search input[type="search"] {
+      padding: 6px 8px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      min-width: 200px;
+    }
+    form.search button {
+      padding: 6px 10px;
+      border: 0;
+      background: #e2e8f0;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .container {
+      max-width: 980px;
+      margin: 18px auto;
+      padding: 0 14px 24px;
+    }
+
+    
+    main {
+      display: grid;
+      grid-template-columns: 1fr 280px;
+      gap: 14px;
+    }
+    article, aside, footer {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    article { padding: 14px 16px; }
+    article h2 { margin: 6px 0 10px; }
+    article h3 { margin: 14px 0 6px; }
+
+    aside { padding: 10px 12px; }
+    aside h2 { font-size: 1.25rem; margin: 8px 0; }
+    aside ul { padding-left: 20px; }
+    aside a { color: #1f3a60; }
+
+    figure { margin: 10px 0; }
+    img { max-width: 100%; border-radius: 3px; }
+
+    footer {
+      margin-top: 14px;
+      padding: 12px 14px;
+      font-size: 0.95rem;
+      color: #444;
+      text-align: center;
+    }
+
+    
+    a { color: #0b63d1; }
+    a:visited { color: #5a3aa2; }
+
+    
+    @media (max-width: 760px) {
+      main { grid-template-columns: 1fr; }
+      form.search { margin-left: 0; width: 100%; }
+      form.search input[type="search"] { flex: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Funny Horse Gazette</h1>
+    
+  </header>
+
+  <div class="topbar">
+    <nav aria-label="Main">
+      <a href="#">Home</a>
+      <a href="#">Our Team</a>
+      <a href="#">Projects</a>
+      <a href="#">Contact</a>
+    </nav>
+
+    <form class="search" role="search" action="#" method="get">
+      <!-- TODO: hook this up later if needed -->
+      <label for="q" class="sr-only">Search</label>
+      <input id="q" name="q" type="search" placeholder="Search horses..." />
+      <button type="submit">Go</button>
+    </form>
+  </div>
+
+  <div class="container">
+    <main>
+      <article>
+        <h2>Article heading</h2>
+        <p>
+          Funny horse <strong>haha</strong>, <strong>he do be sticking his tongue out</strong>.
+          Horses have been around people for thousands of years, and (apparently) they also star in a lot of memes.
+          If you want more, check out
+          <a href="https://www.shutterstock.com/search/funny-horse?dd_referrer=https%3A%2F%2Fduckduckgo.com%2F" target="_blank" rel="noopener">these photos</a>.
+        </p>
+
+        <figure>
+          <img src="https://memeprod.ap-south-1.linodeobjects.com/user-template/d208cdf258fb67f41f4a4c88c2e992b1.png"
+               alt="A funny horse sticking its tongue out">
+          <figcaption>Exhibit A — horse being goofy.</figcaption>
+        </figure>
+
+        <h3>Subsection</h3>
+        <p>
+          Horses use ears, eyes, and tail to signal mood. Forward ears usually mean they're paying attention.
+          Flat ears = probably not thrilled.
+        </p>
+
+        <h3>Another subsection</h3>
+        <p>
+          The <strong>mane event</strong> (sorry): grooming, breeds, and why some horses look so majestic.
+          More pages coming soon.
+        </p>
+      </article>
+
+      <aside aria-labelledby="related">
+        <h2 id="related">Related links</h2>
+        <ul>
+          <li><a href="https://en.wikipedia.org/wiki/Horse" target="_blank" rel="noopener">Horse (Wikipedia)</a></li>
+          <li><a href="https://www.youtube.com/results?search_query=funny+horse" target="_blank" rel="noopener">Funny horse videos</a></li>
+          <li><a href="https://www.nationalgeographic.com/animals/mammals/facts/horse" target="_blank" rel="noopener">Horse facts</a></li>
+          <li><a href="https://www.shutterstock.com/search/funny-horse" target="_blank" rel="noopener">More photos</a></li>
+          <li><a href="https://www.rspca.org.uk/adviceandwelfare/pets/horses" target="_blank" rel="noopener">Horse care tips</a></li>
+        </ul>
+      </aside>
+    </main>
+
+    <footer>
+      © 2077 Sean Bombay — class project. Using basic semantic tags: header, nav, main, article, aside, footer.
+    </footer>
+  </div>
+</body>
+</html>
